@@ -101,6 +101,8 @@ No installation or additional dependencies are required.
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b196a06b-31c3-46a7-bc0e-f68b1340c836" />
 
+---
+---
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3e3a912a-72dc-4b90-86a8-0bb8eb5d0096" />
 
 ---
