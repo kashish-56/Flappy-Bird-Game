@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game{
+    width: 80%;
+    height: 90%;
+    background-image: url("assets/background_image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.bird-png{
+     position: absolute;
+    left: 120px;
+    top: 250px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.pipe {
+    position: absolute;
+    width: 65px;
+
+    background: linear-gradient(
+        to right,
+        #0f7d32 0%,
+        #32d96b 35%,
+        #4ef28c 50%,
+        #32d96b 65%,
+        #0f7d32 100%
+    );
+
+    border: 2px solid #0b5e25;
+    box-shadow:
+        inset -6px 0 8px rgba(0,0,0,.25),
+        inset 6px 0 8px rgba(255,255,255,.18);
+}
+
+.pipe-top::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    bottom: -8px;
+
+    width: calc(100% + 16px);
+    height: 22px;
+
+    background: linear-gradient(
+        to right,
+        #0b6e2d,
+        #34d17a,
+        #0b6e2d
+    );
+
+    border: 2px solid #0b5e25;
+    border-radius: 4px;
+}
+
+.pipe-bottom::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: -8px;
+
+    width: calc(100% + 16px);
+    height: 22px;
+
+    background: linear-gradient(
+        to right,
+        #0b6e2d,
+        #34d17a,
+        #0b6e2d
+    );
+
+    border: 2px solid #0b5e25;
+    border-radius: 4px;
+}
+
+.game-over-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+.game-over-overlay h1{
+    margin: 10px 0;
+     font-size: 60px;
+    color: #ff3b3b;
+    text-shadow:
+        3px 3px 0 #7a0000,
+        0 0 15px rgba(255, 0, 0, 0.7);
+}
+.game-over-overlay h2{
+    margin: 15px 0;
+   font-size: 36px;
+    color: #ffd700;
+    text-shadow:
+        2px 2px 0 #8b7500,
+        0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.game-over-overlay button {
+    margin-top: 20px;
+    padding: 14px 32px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to bottom, #4CAF50, #2E7D32);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #1B5E20;
+    transition: all 0.2s ease;
+}
+
+.game-over-overlay button:hover {
+    background: linear-gradient(to bottom, #66BB6A, #388E3C);
+    transform: translateY(-2px);
+}
+
