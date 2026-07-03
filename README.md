@@ -4,6 +4,16 @@ A simple **Flappy Bird Clone** built using **HTML, CSS, and Vanilla JavaScript**
 
 ---
 
+# 🚀 Live Demo
+
+🌐 **Website:**  
+[https://kashish-56.github.io/Cohort-Assignment-6/](https://flappy-bird-game-green-six.vercel.app/)
+
+📂 **GitHub Repository:**  
+[https://github.com/Kashish-56/Cohort-Assignment-6](https://github.com/kashish-56/Flappy-Bird-Game)
+
+---
+
 ## 🚀 Features
 
 - 🎮 Classic Flappy Bird gameplay
