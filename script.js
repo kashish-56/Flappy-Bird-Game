@@ -70,7 +70,7 @@ pipeBottom.classList.add("pipe", "pipe-bottom");
       score++;
       scored = true;
     }
-    if(birdRect.right > pipeTopRect.left && birdRect.left < pipeTopRect.right && (birdRect.top < pipeTopRect.bottom || birdRect.bottom > bottomHeight.top) ){
+    if(birdRect.right > pipeTopRect.left && birdRect.left < pipeTopRect.right && (birdRect.top < pipeTopRect.bottom || birdRect.bottom > pipeBottomRect.top) ){
       gameOver();
       clearInterval(move);
     }
